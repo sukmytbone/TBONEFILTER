@@ -147,10 +147,17 @@ Show
 
 #Currency - Medium Value
 Hide
-	BaseType "Orb of Alteration" "Chromatic Orb" "Jeweller's Orb" "Orb of Chance" "Glassblower's Bauble" "Orb of Augmentation" "Orb of Transmutation"
+	BaseType "Orb of Alteration" "Chromatic Orb" "Jeweller's Orb" "Orb of Chance" "Glassblower's Bauble" 
 	SetTextColor 170 158 130	
 	SetBorderColor 36 255 36	
-	SetBackgroundColor 0 0 0 235	
+	SetBackgroundColor 0 0 0 235
+
+#Currency - Orb of Augmentation & Orb of Transmutation
+Hide	
+	BaseType "Orb of Augmentation" "Orb of Transmutation""
+	SetTextColor 170 158 130	
+	SetBorderColor 170 158 130 0	
+	SetBackgroundColor 0 0 0 220		
 
 #Currency - Armourer's Scrap & Blacksmith's Whetstone
 Hide	
@@ -757,21 +764,7 @@ Show	#Leveling Specials - Quivers
 #	Rarity Magic
 #	ItemLevel <= 45
 #	SetFontSize 28
-	
-# RARE VENDOR RECIPES
-# REGAL
-#Show
-#	Rarity Rare
-#	ItemLevel >= 75
-#	SetBorderColor 255 255 255
-
-# CHAOS
-#Show
-#	Rarity Rare
-#	ItemLevel >= 60
-#	SetBorderColor 255 255 0
-	
-	
+			
 #	CHANCE				###################################################################
 Show
 	BaseType "Sorcerer Boots"
@@ -784,12 +777,6 @@ Show
 	Rarity Normal
 	SetBorderColor 255 128 128
 	SetFontSize 38
-	
-#Show
-#	BaseType "Occultist's Vestment"
-#	Rarity Normal
-#	SetBorderColor 255 128 128
-#	SetFontSize 38
 	
 #Show
 #	BaseType "Occultist's Vestment"
@@ -878,13 +865,7 @@ Show
 # SPECIAL AMULETS
 Show
 	BaseType "Marble Amulet" "Blue Pearl Amulet"
-	
-
-# SHOW NEW 2.4 ITEMS
-#Show
-#	BaseType "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
-#	SetBorderColor 50 50 50
-		
+			
 #	 FLASKS			###################################################################
 
 Hide	#Flasks - Quality - Q10+ - Normal

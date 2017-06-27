@@ -147,13 +147,20 @@ Show
 
 #Currency - Medium Value
 Show
-	BaseType "Orb of Alteration" "Chromatic Orb" "Jeweller's Orb" "Orb of Chance" "Glassblower's Bauble" "Orb of Augmentation" "Orb of Transmutation"
+	BaseType "Orb of Alteration" "Chromatic Orb" "Jeweller's Orb" "Orb of Chance" "Glassblower's Bauble"
 	SetTextColor 170 158 130	
 	SetBorderColor 36 255 36	
-	SetBackgroundColor 0 0 0 235	
+	SetBackgroundColor 0 0 0 235
+
+#Currency - Orb of Augmentation & Orb of Transmutation
+Hide	
+	BaseType "Orb of Augmentation" "Orb of Transmutation""
+	SetTextColor 170 158 130	
+	SetBorderColor 170 158 130 0	
+	SetBackgroundColor 0 0 0 220	
 
 #Currency - Armourer's Scrap & Blacksmith's Whetstone
-Show	
+Hide	
 	BaseType "Armourer's Scrap" "Blacksmith's Whetstone"
 	SetTextColor 170 158 130	
 	SetBorderColor 170 158 130 0	
@@ -285,7 +292,7 @@ Show
 	SetTextColor 27 162 155		
 	SetBackgroundColor 0 0 0 255	
 #Gems - Q1+
-Show	
+Hide	
 	Class "Gems"
 	Quality >= 1
 	SetBorderColor 27 162 155 0	
@@ -298,17 +305,17 @@ Show
 	SetTextColor 27 162 155		
 	SetBorderColor 27 162 155	
 #Gems - Active
-Show	
+Hide	
 	Class "Active Skill Gems"
 	SetTextColor 27 162 155		
 	SetFontSize 28
 #Gems - Support
-Show	
+Hide	
 	Class "Support Skill Gems"
 	SetTextColor 27 162 155		
 	SetFontSize 28
 #Gems - CatchAll
-Show	
+Hide	
 	Class "Gems"
 	SetTextColor 27 162 155		
 	SetFontSize 28	
@@ -575,7 +582,7 @@ Show
 #	Hide unwanted cards	
 Hide
 	Class Card
-	BaseType "The Carrion Crow" "Turn the Other Cheek" "Thunderous Skies" "The Metalsmith's Gift" "Death" "The Wolf's Shadow" "Assassin's Favour" "Lantador's Lost Love" "The Gambler" "The King's Blade" "The Scholar" "The Gentleman" "The Calling" "Struck by Lightning" "The Warden" "The Hermit" "The Oath" "Call to the First Ones"
+	BaseType "The Carrion Crow" "Turn the Other Cheek" "Thunderous Skies" "Her Mask" "The Metalsmith's Gift" "Death" "The Wolf's Shadow" "Assassin's Favour" "Lantador's Lost Love" "The Gambler" "The King's Blade" "The Scholar" "The Gentleman" "The Calling" "Struck by Lightning" "The Warden" "The Hermit" "The Oath" "Call to the First Ones"
 	
 # 	The rest
 Show
@@ -757,21 +764,7 @@ Show	#Leveling Specials - Quivers
 #	Rarity Magic
 #	ItemLevel <= 45
 #	SetFontSize 28
-	
-# RARE VENDOR RECIPES
-# REGAL
-#Show
-#	Rarity Rare
-#	ItemLevel >= 75
-#	SetBorderColor 255 255 255
-
-# CHAOS
-#Show
-#	Rarity Rare
-#	ItemLevel >= 60
-#	SetBorderColor 255 255 0
-	
-	
+			
 #	CHANCE				###################################################################
 Show
 	BaseType "Sorcerer Boots"
@@ -784,12 +777,6 @@ Show
 	Rarity Normal
 	SetBorderColor 255 128 128
 	SetFontSize 38
-	
-#Show
-#	BaseType "Occultist's Vestment"
-#	Rarity Normal
-#	SetBorderColor 255 128 128
-#	SetFontSize 38
 	
 #Show
 #	BaseType "Occultist's Vestment"
@@ -813,7 +800,7 @@ Show
 	Width 1
 	SetBorderColor 255 0 0	
 
-#Chromatic Orb Recipe - 3x1	
+Chromatic Orb Recipe - 3x1	
 Show	
 	SocketGroup RGB
 	Rarity <= Magic
@@ -821,7 +808,7 @@ Show
 	Width 1
 	SetBorderColor 255 0 0	
 
-#Chromatic Orb Recipe - 2x2	
+Chromatic Orb Recipe - 2x2	
 Show	
 	SocketGroup RGB
 	Rarity <= Magic
@@ -864,27 +851,19 @@ Show
 	SetBorderColor 200 200 200	
 	SetTextColor 200 200 200	
 	SetBackgroundColor 0 0 0 255		
-		
-# SHOW GOOD BELTS
+
+#	ATLAS DROPS
+Show 
+	BaseType "Crystal Belt" "Opal Ring" "Steel Ring"
+	
 Show
-	BaseType "Vanguard Belt" "Crystal Belt"
-	Rarity Normal
+	BaseType "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
 	
 	
 # SPECIAL RINGS
 Show
-	BaseType "Prismatic Ring" "Opal Ring" "Steel Ring" 
-	
-# SPECIAL AMULETS
-Show
-	BaseType "Marble Amulet" "Blue Pearl Amulet"
-	
-
-# SHOW NEW 2.4 ITEMS
-#Show
-#	BaseType "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
-#	SetBorderColor 50 50 50
-		
+	BaseType "Prismatic Ring" 
+				
 #	 FLASKS			###################################################################
 
 Show	#Flasks - Quality - Q10+ - Normal
@@ -6026,13 +6005,13 @@ Show	#Gear - ~Rare - Endgame - Quiver - Spike-Point Arrow Quiver
 #	RARE CATCHALL	###################################################################
 
 #Rares - Staves & Wands
-Show	#Rares - ~Staves, Wands & Quivers
+Hide	#Rares - ~Staves, Wands & Quivers
 	Rarity Rare
 	Class "Staves" "Wands" "Quivers"
 	SetTextColor 255 255 119	#Rares - Staves, Wands & Quivers
 	SetBorderColor 127 127 127 0	#Rares - Staves, Wands & Quivers
 #Rares - DropLevel <= 45
-Show	#Rares - DropLevel <= 45
+Hide	#Rares - DropLevel <= 45
 	Rarity Rare
 	DropLevel <= 45
 	ItemLevel >= 60
@@ -6040,20 +6019,20 @@ Show	#Rares - DropLevel <= 45
 	SetBorderColor 127 127 127 0	#Rares - DropLevel <= 45
 	SetFontSize 28
 #Rares - DropLevel <= 60
-Show	#Rares - DropLevel <= 60
+Hide	#Rares - DropLevel <= 60
 	Rarity Rare
 	DropLevel <= 60
 	ItemLevel >= 60
 	SetTextColor 230 230 105 215	#Rares - DropLevel <= 60
 	SetBorderColor 127 127 127 0	#Rares - DropLevel <= 60
 #Rares - CatchAll
-Show	#Rares - ~CatchAll
+Hide	#Rares - ~CatchAll
 	Rarity Rare
 	ItemLevel >= 60
 	SetTextColor 230 230 105 215	#Rares - CatchAll
 	SetBorderColor 127 127 127 0	#Rares - CatchAll
 #Rares - CatchAll
-Show	#Rares - ~CatchAll
+Hide	#Rares - ~CatchAll
 	Rarity Rare
 	SetTextColor 255 255 119	#Rares - CatchAll
 	SetBorderColor 127 127 127 0	#Rares - CatchAll
@@ -6066,7 +6045,7 @@ Show	#Gear - Progression - Armour - STR - Lowlevel - Helmets
 	BaseType "Iron Hat" "Cone Helmet"
 	ItemLevel <= 30
 	SetFontSize 28
-Show	#Gear - Progression - Armour - STR - Low Sockets - Helmets
+Hide	#Gear - Progression - Armour - STR - Low Sockets - Helmets
 	Sockets < 4
 	Class "Helmets"
 	Rarity <= Magic
@@ -6102,7 +6081,7 @@ Show	#Gear - Progression - Armour - STR - Lowlevel - Body Armours
 	BaseType "Plate Vest" "Chestplate"
 	ItemLevel <= 30
 	SetFontSize 28
-Show	#Gear - Progression - Armour - STR - Low Sockets - Body Armours
+Hide	#Gear - Progression - Armour - STR - Low Sockets - Body Armours
 	Sockets < 4
 	Class "Body Armours"
 	Rarity <= Magic
@@ -6138,7 +6117,7 @@ Show	#Gear - Progression - Armour - STR - Lowlevel - Gloves
 	BaseType "Iron Gauntlets" "Plated Gauntlets"
 	ItemLevel <= 30
 	SetFontSize 28
-Show	#Gear - Progression - Armour - STR - Low Sockets - Gloves
+Hide	#Gear - Progression - Armour - STR - Low Sockets - Gloves
 	Sockets < 4
 	Class "Gloves"
 	Rarity <= Magic
@@ -6174,7 +6153,7 @@ Show	#Gear - Progression - Armour - STR - Lowlevel - Boots
 	BaseType "Iron Greaves" "Steel Greaves"
 	ItemLevel <= 30
 	SetFontSize 28
-Show	#Gear - Progression - Armour - STR - Low Sockets - Boots
+Hide	#Gear - Progression - Armour - STR - Low Sockets - Boots
 	Sockets < 4
 	Class "Boots"
 	Rarity <= Magic
@@ -6210,7 +6189,7 @@ Show	#Gear - Progression - Armour - STR - Lowlevel - Shields
 	BaseType "Splintered Tower Shield" "Corroded Tower Shield"
 	ItemLevel <= 30
 	SetFontSize 28
-Show	#Gear - Progression - Armour - STR - Low Sockets - Shields
+Hide	#Gear - Progression - Armour - STR - Low Sockets - Shields
 	Sockets < 3
 	Class "Shields"
 	Rarity <= Magic
