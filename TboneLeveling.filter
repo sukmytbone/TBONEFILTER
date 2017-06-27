@@ -327,7 +327,7 @@ Show
 	Class "Maps"
 	Rarity Normal
 	DropLevel >= 81
-	SetTextColor 255 165 0	
+	SetTextColor 200 36 36	
 	SetBorderColor 255 0 255	
 	SetBackgroundColor 0 0 0	
 	SetFontSize 37
@@ -337,7 +337,7 @@ Show
 	Class "Maps"
 	Rarity Magic
 	DropLevel >= 81
-	SetTextColor 255 165 0	
+	SetTextColor 200 36 36	
 	SetBorderColor 255 0 255	
 	SetBackgroundColor 0 0 0	
 	SetFontSize 37
@@ -347,7 +347,7 @@ Show
 	Class "Maps"
 	Rarity Rare
 	DropLevel >= 81
-	SetTextColor 255 165 0		
+	SetTextColor 200 36 36		
 	SetBorderColor 255 0 255	
 	SetBackgroundColor 0 0 0	
 	SetFontSize 37
@@ -357,7 +357,7 @@ Show
 	Class "Maps"
 	Rarity Normal
 	DropLevel >= 78
-	SetTextColor 255 165 0
+	SetTextColor 200 36 36
 	SetBorderColor 255 0 255	
 	SetBackgroundColor 0 0 0	
 	SetFontSize 37
@@ -367,7 +367,7 @@ Show
 	Class "Maps"
 	Rarity Magic
 	DropLevel >= 78
-	SetTextColor 255 165 0
+	SetTextColor 200 36 36
 	SetBorderColor 255 0 255	
 	SetBackgroundColor 0 0 0	
 	SetFontSize 37
@@ -377,7 +377,7 @@ Show
 	Class "Maps"
 	Rarity Rare
 	DropLevel >= 78
-	SetTextColor 255 165 0
+	SetTextColor 200 36 36
 	SetBorderColor 255 0 255	
 	SetBackgroundColor 0 0 0	
 	SetFontSize 37
@@ -852,21 +852,18 @@ Show
 	SetTextColor 200 200 200	
 	SetBackgroundColor 0 0 0 255		
 		
-# SHOW GOOD BELTS
+#	ATLAS DROPS			###################################################################
 Show
-	BaseType "Vanguard Belt" "Crystal Belt"
-	Rarity Normal
+	BaseType "Crystal Belt" "Opal Ring" "Steel Ring"
 	
-	
-# SPECIAL RINGS
 Show
-	BaseType "Prismatic Ring" "Opal Ring" "Steel Ring" 
-	
-# SPECIAL AMULETS
+	BaseType "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" 
+		
+#	SPECIAL RINGS
 Show
-	BaseType "Marble Amulet" "Blue Pearl Amulet"
+	BaseType "Prismatic Ring" 
 			
-#	 FLASKS			###################################################################
+#	 FLASKS				###################################################################
 
 Show	#Flasks - Quality - Q10+ - Normal
 	Quality >= 10
@@ -6227,7 +6224,7 @@ Show	#Gear - Progression - Armour - DEX - Lowlevel - Helmets
 	BaseType "Leather Cap" "Tricorne"
 	ItemLevel <= 30
 	SetFontSize 28
-Hide	#Gear - Progression - Armour - DEX - Low Sockets - Helmets
+Show	#Gear - Progression - Armour - DEX - Low Sockets - Helmets
 	Sockets < 4
 	Class "Helmets"
 	Rarity <= Magic
@@ -6263,7 +6260,7 @@ Show	#Gear - Progression - Armour - DEX - Lowlevel - Body Armours
 	BaseType "Shabby Jerkin" "Strapped Leather"
 	ItemLevel <= 30
 	SetFontSize 28
-Hide	#Gear - Progression - Armour - DEX - Low Sockets - Body Armours
+Show	#Gear - Progression - Armour - DEX - Low Sockets - Body Armours
 	Sockets < 4
 	Class "Body Armours"
 	Rarity <= Magic
@@ -6299,7 +6296,7 @@ Show	#Gear - Progression - Armour - DEX - Lowlevel - Gloves
 	BaseType "Rawhide Gloves" "Goathide Gloves"
 	ItemLevel <= 30
 	SetFontSize 28
-Hide	#Gear - Progression - Armour - DEX - Low Sockets - Gloves
+Show	#Gear - Progression - Armour - DEX - Low Sockets - Gloves
 	Sockets < 4
 	Class "Gloves"
 	Rarity <= Magic
@@ -6335,7 +6332,7 @@ Show	#Gear - Progression - Armour - DEX - Lowlevel - Boots
 	BaseType "Rawhide Boots" "Goathide Boots"
 	ItemLevel <= 30
 	SetFontSize 28
-Hide	#Gear - Progression - Armour - DEX - Low Sockets - Boots
+Show	#Gear - Progression - Armour - DEX - Low Sockets - Boots
 	Sockets < 4
 	Class "Boots"
 	Rarity <= Magic
@@ -6371,7 +6368,7 @@ Show	#Gear - Progression - Armour - DEX - Lowlevel - Shields
 	BaseType "Goathide Buckler" "Pine Buckler"
 	ItemLevel <= 30
 	SetFontSize 28
-Hide	#Gear - Progression - Armour - DEX - Low Sockets - Shields
+Show	#Gear - Progression - Armour - DEX - Low Sockets - Shields
 	Sockets < 3
 	Class "Shields"
 	Rarity <= Magic
@@ -6407,7 +6404,7 @@ Show	#Gear - Progression - Armour - INT - Lowlevel - Helmets
 	BaseType "Vine Circlet" "Iron Circlet"
 	ItemLevel <= 30
 	SetFontSize 28
-Hide	#Gear - Progression - Armour - INT - Low Sockets - Helmets
+Show	#Gear - Progression - Armour - INT - Low Sockets - Helmets
 	Sockets < 4
 	Class "Helmets"
 	Rarity <= Magic
@@ -6443,7 +6440,7 @@ Show	#Gear - Progression - Armour - INT - Lowlevel - Body Armours
 	BaseType "Simple Robe" "Silken Vest"
 	ItemLevel <= 30
 	SetFontSize 28
-Hide	#Gear - Progression - Armour - INT - Low Sockets - Body Armours
+Show	#Gear - Progression - Armour - INT - Low Sockets - Body Armours
 	Sockets < 4
 	Class "Body Armours"
 	Rarity <= Magic
@@ -6479,7 +6476,7 @@ Show	#Gear - Progression - Armour - INT - Lowlevel - Gloves
 	BaseType "Wool Gloves" "Velvet Gloves"
 	ItemLevel <= 30
 	SetFontSize 28
-Hide	#Gear - Progression - Armour - INT - Low Sockets - Gloves
+Show	#Gear - Progression - Armour - INT - Low Sockets - Gloves
 	Sockets < 4
 	Class "Gloves"
 	Rarity <= Magic
@@ -6515,7 +6512,7 @@ Show	#Gear - Progression - Armour - INT - Lowlevel - Boots
 	BaseType "Wool Shoes" "Velvet Slippers"
 	ItemLevel <= 30
 	SetFontSize 28
-Hide	#Gear - Progression - Armour - INT - Low Sockets - Boots
+Show	#Gear - Progression - Armour - INT - Low Sockets - Boots
 	Sockets < 4
 	Class "Boots"
 	Rarity <= Magic
@@ -6551,7 +6548,7 @@ Show	#Gear - Progression - Armour - INT - Lowlevel - Shields
 	BaseType "Twig Spirit Shield" "Yew Spirit Shield"
 	ItemLevel <= 30
 	SetFontSize 28
-Hide	#Gear - Progression - Armour - INT - Low Sockets - Shields
+Show	#Gear - Progression - Armour - INT - Low Sockets - Shields
 	Sockets < 3
 	Class "Shields"
 	Rarity <= Magic
@@ -6587,7 +6584,7 @@ Show	#Gear - Progression - Armour - DEX/INT - Lowlevel - Helmets
 	BaseType "Scare Mask" "Plague Mask"
 	ItemLevel <= 30
 	SetFontSize 28
-Hide	#Gear - Progression - Armour - DEX/INT - Low Sockets - Helmets
+Show	#Gear - Progression - Armour - DEX/INT - Low Sockets - Helmets
 	Sockets < 4
 	Class "Helmets"
 	Rarity <= Magic
@@ -6623,7 +6620,7 @@ Show	#Gear - Progression - Armour - DEX/INT - Lowlevel - Body Armours
 	BaseType "Padded Vest" "Oiled Vest"
 	ItemLevel <= 30
 	SetFontSize 28
-Hide	#Gear - Progression - Armour - DEX/INT - Low Sockets - Body Armours
+Show	#Gear - Progression - Armour - DEX/INT - Low Sockets - Body Armours
 	Sockets < 4
 	Class "Body Armours"
 	Rarity <= Magic
@@ -6659,7 +6656,7 @@ Show	#Gear - Progression - Armour - DEX/INT - Lowlevel - Gloves
 	BaseType "Wrapped Mitts" "Strapped Mitts"
 	ItemLevel <= 30
 	SetFontSize 28
-Hide	#Gear - Progression - Armour - DEX/INT - Low Sockets - Gloves
+Show	#Gear - Progression - Armour - DEX/INT - Low Sockets - Gloves
 	Sockets < 4
 	Class "Gloves"
 	Rarity <= Magic
@@ -6695,7 +6692,7 @@ Show	#Gear - Progression - Armour - DEX/INT - Lowlevel - Boots
 	BaseType "Wrapped Boots" "Strapped Boots"
 	ItemLevel <= 30
 	SetFontSize 28
-Hide	#Gear - Progression - Armour - DEX/INT - Low Sockets - Boots
+Show	#Gear - Progression - Armour - DEX/INT - Low Sockets - Boots
 	Sockets < 4
 	Class "Boots"
 	Rarity <= Magic
@@ -6731,7 +6728,7 @@ Show	#Gear - Progression - Armour - DEX/INT - Lowlevel - Shields
 	BaseType "Spiked Bundle" "Driftwood Spiked Shield"
 	ItemLevel <= 30
 	SetFontSize 28
-Hide	#Gear - Progression - Armour - DEX/INT - Low Sockets - Shields
+Show	#Gear - Progression - Armour - DEX/INT - Low Sockets - Shields
 	Sockets < 3
 	Class "Shields"
 	Rarity <= Magic
@@ -6767,7 +6764,7 @@ Show	#Gear - Progression - Armour - STR/INT - Lowlevel - Helmets
 	BaseType "Rusted Coif" "Soldier Helmet"
 	ItemLevel <= 30
 	SetFontSize 28
-Hide	#Gear - Progression - Armour - STR/INT - Low Sockets - Helmets
+Show	#Gear - Progression - Armour - STR/INT - Low Sockets - Helmets
 	Sockets < 4
 	Class "Helmets"
 	Rarity <= Magic
@@ -6803,7 +6800,7 @@ Show	#Gear - Progression - Armour - STR/INT - Lowlevel - Body Armours
 	BaseType "Chainmail Vest" "Chainmail Tunic"
 	ItemLevel <= 30
 	SetFontSize 28
-Hide	#Gear - Progression - Armour - STR/INT - Low Sockets - Body Armours
+Show	#Gear - Progression - Armour - STR/INT - Low Sockets - Body Armours
 	Sockets < 4
 	Class "Body Armours"
 	Rarity <= Magic
@@ -6839,7 +6836,7 @@ Show	#Gear - Progression - Armour - STR/INT - Lowlevel - Gloves
 	BaseType "Chain Gloves" "Ringmail Gloves"
 	ItemLevel <= 30
 	SetFontSize 28
-Hide	#Gear - Progression - Armour - STR/INT - Low Sockets - Gloves
+Show	#Gear - Progression - Armour - STR/INT - Low Sockets - Gloves
 	Sockets < 4
 	Class "Gloves"
 	Rarity <= Magic
@@ -6875,7 +6872,7 @@ Show	#Gear - Progression - Armour - STR/INT - Lowlevel - Boots
 	BaseType "Chain Boots" "Ringmail Boots"
 	ItemLevel <= 30
 	SetFontSize 28
-Hide	#Gear - Progression - Armour - STR/INT - Low Sockets - Boots
+Show	#Gear - Progression - Armour - STR/INT - Low Sockets - Boots
 	Sockets < 4
 	Class "Boots"
 	Rarity <= Magic
@@ -6911,7 +6908,7 @@ Show	#Gear - Progression - Armour - STR/INT - Lowlevel - Shields
 	BaseType "Plank Kite Shield" "Linden Kite Shield"
 	ItemLevel <= 30
 	SetFontSize 28
-Hide	#Gear - Progression - Armour - STR/INT - Low Sockets - Shields
+Show	#Gear - Progression - Armour - STR/INT - Low Sockets - Shields
 	Sockets < 3
 	Class "Shields"
 	Rarity <= Magic
@@ -6947,7 +6944,7 @@ Show	#Gear - Progression - Armour - DEX/STR - Lowlevel - Helmets
 	BaseType "Battered Helm" "Sallet"
 	ItemLevel <= 30
 	SetFontSize 28
-Hide	#Gear - Progression - Armour - DEX/STR - Low Sockets - Helmets
+Show	#Gear - Progression - Armour - DEX/STR - Low Sockets - Helmets
 	Sockets < 4
 	Class "Helmets"
 	Rarity <= Magic
@@ -6983,7 +6980,7 @@ Show	#Gear - Progression - Armour - DEX/STR - Lowlevel - Body Armours
 	BaseType "Scale Vest" "Light Brigandine"
 	ItemLevel <= 30
 	SetFontSize 28
-Hide	#Gear - Progression - Armour - DEX/STR - Low Sockets - Body Armours
+Show	#Gear - Progression - Armour - DEX/STR - Low Sockets - Body Armours
 	Sockets < 4
 	Class "Body Armours"
 	Rarity <= Magic
@@ -7019,7 +7016,7 @@ Show	#Gear - Progression - Armour - DEX/STR - Lowlevel - Gloves
 	BaseType "Fishscale Gauntlets" "Ironscale Gauntlets"
 	ItemLevel <= 30
 	SetFontSize 28
-Hide	#Gear - Progression - Armour - DEX/STR - Low Sockets - Gloves
+Show	#Gear - Progression - Armour - DEX/STR - Low Sockets - Gloves
 	Sockets < 4
 	Class "Gloves"
 	Rarity <= Magic
@@ -7055,7 +7052,7 @@ Show	#Gear - Progression - Armour - DEX/STR - Lowlevel - Boots
 	BaseType "Leatherscale Boots" "Ironscale Boots"
 	ItemLevel <= 30
 	SetFontSize 28
-Hide	#Gear - Progression - Armour - DEX/STR - Low Sockets - Boots
+Show	#Gear - Progression - Armour - DEX/STR - Low Sockets - Boots
 	Sockets < 4
 	Class "Boots"
 	Rarity <= Magic
@@ -7091,7 +7088,7 @@ Show	#Gear - Progression - Armour - DEX/STR - Lowlevel - Shields
 	BaseType "Rotted Round Shield" "Fir Round Shield"
 	ItemLevel <= 30
 	SetFontSize 28
-Hide	#Gear - Progression - Armour - DEX/STR - Low Sockets - Shields
+Show	#Gear - Progression - Armour - DEX/STR - Low Sockets - Shields
 	Sockets < 3
 	Class "Shields"
 	Rarity <= Magic
@@ -7127,7 +7124,7 @@ Show	#Gear - Progression - Weapon - One Hand Axes - Lowlevel
 	Rarity <= Magic
 	ItemLevel <= 10
 	SetFontSize 28
-Hide	#Gear - Progression - Weapon - One Hand Axes - Low Sockets
+Show	#Gear - Progression - Weapon - One Hand Axes - Low Sockets
 	Sockets < 3
 	Class "One Hand Axes"
 	Rarity <= Magic
@@ -7165,7 +7162,7 @@ Show	#Gear - Progression - Weapon - One Hand Swords - Lowlevel
 	Rarity <= Magic
 	ItemLevel <= 10
 	SetFontSize 28
-Hide	#Gear - Progression - Weapon - One Hand Swords - Low Sockets
+Show	#Gear - Progression - Weapon - One Hand Swords - Low Sockets
 	Sockets < 3
 	Class "One Hand Swords"
 	Rarity <= Magic
@@ -7189,7 +7186,7 @@ Show	#Gear - Progression - Weapon - Two Hand Maces - Lowlevel
 	Rarity <= Magic
 	ItemLevel <= 10
 	SetFontSize 28
-Hide	#Gear - Progression - Weapon - Two Hand Maces - Low Sockets
+Show	#Gear - Progression - Weapon - Two Hand Maces - Low Sockets
 	Sockets < 4
 	Class "Two Hand Maces"
 	Rarity <= Magic
@@ -7213,7 +7210,7 @@ Show	#Gear - Progression - Weapon - Bows - Lowlevel
 	Rarity <= Magic
 	ItemLevel <= 10
 	SetFontSize 28
-Hide	#Gear - Progression - Weapon - Bows - Low Sockets
+Show	#Gear - Progression - Weapon - Bows - Low Sockets
 	Sockets < 4
 	Class "Bows"
 	Rarity <= Magic
@@ -7251,7 +7248,7 @@ Show	#Gear - Progression - Weapon - Thrusting One Hand Swords - Lowlevel
 	Rarity <= Magic
 	ItemLevel <= 10
 	SetFontSize 28
-Hide	#Gear - Progression - Weapon - Thrusting One Hand Swords - Low Sockets
+Show	#Gear - Progression - Weapon - Thrusting One Hand Swords - Low Sockets
 	Sockets < 3
 	Class "Thrusting One Hand Swords"
 	Rarity <= Magic
@@ -7275,7 +7272,7 @@ Show	#Gear - Progression - Weapon - Daggers - Lowlevel
 	Rarity <= Magic
 	ItemLevel <= 10
 	SetFontSize 28
-Hide	#Gear - Progression - Weapon - Daggers - Low Sockets
+Show	#Gear - Progression - Weapon - Daggers - Low Sockets
 	Sockets < 3
 	Class "Daggers"
 	Rarity <= Magic
@@ -7299,7 +7296,7 @@ Show	#Gear - Progression - Weapon - One Hand Maces - Lowlevel
 	Rarity <= Magic
 	ItemLevel <= 10
 	SetFontSize 28
-Hide	#Gear - Progression - Weapon - One Hand Maces - Low Sockets
+Show	#Gear - Progression - Weapon - One Hand Maces - Low Sockets
 	Sockets < 3
 	Class "One Hand Maces"
 	Rarity <= Magic
@@ -7323,7 +7320,7 @@ Show	#Gear - Progression - Weapon - Two Hand Axes - Lowlevel
 	Rarity <= Magic
 	ItemLevel <= 10
 	SetFontSize 28
-Hide	#Gear - Progression - Weapon - Two Hand Axes - Low Sockets
+Show	#Gear - Progression - Weapon - Two Hand Axes - Low Sockets
 	Sockets < 4
 	Class "Two Hand Axes"
 	Rarity <= Magic
@@ -7361,7 +7358,7 @@ Show	#Gear - Progression - Weapon - Two Hand Swords - Lowlevel
 	Rarity <= Magic
 	ItemLevel <= 10
 	SetFontSize 28
-Hide	#Gear - Progression - Weapon - Two Hand Swords - Low Sockets
+Show	#Gear - Progression - Weapon - Two Hand Swords - Low Sockets
 	Sockets < 4
 	Class "Two Hand Swords"
 	Rarity <= Magic
@@ -7385,7 +7382,7 @@ Show	#Gear - Progression - Weapon - Claws - Lowlevel
 	Rarity <= Magic
 	ItemLevel <= 10
 	SetFontSize 28
-Hide	#Gear - Progression - Weapon - Claws - Low Sockets
+Show	#Gear - Progression - Weapon - Claws - Low Sockets
 	Sockets < 3
 	Class "Claws"
 	Rarity <= Magic
@@ -7409,7 +7406,7 @@ Show	#Gear - Progression - Weapon - Sceptres - Lowlevel
 	Rarity <= Magic
 	ItemLevel <= 10
 	SetFontSize 28
-Hide	#Gear - Progression - Weapon - Sceptres - Low Sockets
+Show	#Gear - Progression - Weapon - Sceptres - Low Sockets
 	Sockets < 3
 	Class "Sceptres"
 	Rarity <= Magic
@@ -7433,7 +7430,7 @@ Show	#Gear - Progression - Weapon - Staves - Lowlevel
 	Rarity <= Magic
 	ItemLevel <= 10
 	SetFontSize 28
-Hide	#Gear - Progression - Weapon - Staves - Low Sockets
+Show	#Gear - Progression - Weapon - Staves - Low Sockets
 	Sockets < 4
 	Class "Staves"
 	Rarity <= Magic
@@ -7457,7 +7454,7 @@ Show	#Gear - Progression - Weapon - Wands - Lowlevel
 	Rarity <= Magic
 	ItemLevel <= 10
 	SetFontSize 28
-Hide	#Gear - Progression - Weapon - Wands - Low Sockets
+Show	#Gear - Progression - Weapon - Wands - Low Sockets
 	Sockets < 3
 	Class "Wands"
 	Rarity <= Magic

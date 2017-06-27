@@ -191,7 +191,7 @@ Show
 #Currency - Labyrinth
 Show
 	BaseType "Absorption" "Bane of the Loyal" "Cogs of Disruption" "Golden Key" "Heart of the Gargoyle" "Orb of Elemental Dispersion" "Portal Shredder" "Rod of Detonation" "Sand of Eternity" "Silver Key" "Treasure Key" "Eber's Key" "Yriel's Key" "Inya's Key" "Volkuur's Key"
-	SetTextColor 74 230 58		
+	SetTextColor 0 255 255		
 	SetBorderColor 0 0 0		
 	SetBackgroundColor 0 0 0	
 
@@ -327,7 +327,7 @@ Show
 	Class "Maps"
 	Rarity Normal
 	DropLevel >= 81
-	SetTextColor 255 165 0	
+	SetTextColor 200 36 36	
 	SetBorderColor 255 0 255	
 	SetBackgroundColor 0 0 0	
 	SetFontSize 37
@@ -337,7 +337,7 @@ Show
 	Class "Maps"
 	Rarity Magic
 	DropLevel >= 81
-	SetTextColor 255 165 0	
+	SetTextColor 200 36 36	
 	SetBorderColor 255 0 255	
 	SetBackgroundColor 0 0 0	
 	SetFontSize 37
@@ -347,7 +347,7 @@ Show
 	Class "Maps"
 	Rarity Rare
 	DropLevel >= 81
-	SetTextColor 255 165 0		
+	SetTextColor 200 36 36		
 	SetBorderColor 255 0 255	
 	SetBackgroundColor 0 0 0	
 	SetFontSize 37
@@ -357,7 +357,7 @@ Show
 	Class "Maps"
 	Rarity Normal
 	DropLevel >= 78
-	SetTextColor 255 165 0
+	SetTextColor 200 36 36
 	SetBorderColor 255 0 255	
 	SetBackgroundColor 0 0 0	
 	SetFontSize 37
@@ -367,7 +367,7 @@ Show
 	Class "Maps"
 	Rarity Magic
 	DropLevel >= 78
-	SetTextColor 255 165 0
+	SetTextColor 200 36 36
 	SetBorderColor 255 0 255	
 	SetBackgroundColor 0 0 0	
 	SetFontSize 37
@@ -377,7 +377,7 @@ Show
 	Class "Maps"
 	Rarity Rare
 	DropLevel >= 78
-	SetTextColor 255 165 0
+	SetTextColor 200 36 36
 	SetBorderColor 255 0 255	
 	SetBackgroundColor 0 0 0	
 	SetFontSize 37
@@ -852,21 +852,18 @@ Show
 	SetTextColor 200 200 200	
 	SetBackgroundColor 0 0 0 255		
 		
-# SHOW GOOD BELTS
+#	ATLAS DROPS			###################################################################
 Show
-	BaseType "Vanguard Belt" "Crystal Belt"
-	Rarity Normal
+	BaseType "Crystal Belt" "Opal Ring" "Steel Ring"
 	
-	
-# SPECIAL RINGS
 Show
-	BaseType "Prismatic Ring" "Opal Ring" "Steel Ring" 
-	
-# SPECIAL AMULETS
+	BaseType "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" 
+		
+#	SPECIAL RINGS	
 Show
-	BaseType "Marble Amulet" "Blue Pearl Amulet"
+	BaseType "Prismatic Ring" 
 			
-#	 FLASKS			###################################################################
+#	 FLASKS				###################################################################
 
 Hide	#Flasks - Quality - Q10+ - Normal
 	Quality >= 10

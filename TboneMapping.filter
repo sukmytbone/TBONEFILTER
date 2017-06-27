@@ -327,7 +327,7 @@ Show
 	Class "Maps"
 	Rarity Normal
 	DropLevel >= 81
-	SetTextColor 255 165 0	
+	SetTextColor 200 36 36	
 	SetBorderColor 255 0 255	
 	SetBackgroundColor 0 0 0	
 	SetFontSize 37
@@ -337,7 +337,7 @@ Show
 	Class "Maps"
 	Rarity Magic
 	DropLevel >= 81
-	SetTextColor 255 165 0	
+	SetTextColor 200 36 36	
 	SetBorderColor 255 0 255	
 	SetBackgroundColor 0 0 0	
 	SetFontSize 37
@@ -347,7 +347,7 @@ Show
 	Class "Maps"
 	Rarity Rare
 	DropLevel >= 81
-	SetTextColor 255 165 0		
+	SetTextColor 200 36 36		
 	SetBorderColor 255 0 255	
 	SetBackgroundColor 0 0 0	
 	SetFontSize 37
@@ -357,7 +357,7 @@ Show
 	Class "Maps"
 	Rarity Normal
 	DropLevel >= 78
-	SetTextColor 255 165 0
+	SetTextColor 200 36 36
 	SetBorderColor 255 0 255	
 	SetBackgroundColor 0 0 0	
 	SetFontSize 37
@@ -367,7 +367,7 @@ Show
 	Class "Maps"
 	Rarity Magic
 	DropLevel >= 78
-	SetTextColor 255 165 0
+	SetTextColor 200 36 36
 	SetBorderColor 255 0 255	
 	SetBackgroundColor 0 0 0	
 	SetFontSize 37
@@ -377,7 +377,7 @@ Show
 	Class "Maps"
 	Rarity Rare
 	DropLevel >= 78
-	SetTextColor 255 165 0
+	SetTextColor 200 36 36
 	SetBorderColor 255 0 255	
 	SetBackgroundColor 0 0 0	
 	SetFontSize 37
@@ -800,7 +800,7 @@ Show
 	Width 1
 	SetBorderColor 255 0 0	
 
-Chromatic Orb Recipe - 3x1	
+#Chromatic Orb Recipe - 3x1	
 Show	
 	SocketGroup RGB
 	Rarity <= Magic
@@ -808,7 +808,7 @@ Show
 	Width 1
 	SetBorderColor 255 0 0	
 
-Chromatic Orb Recipe - 2x2	
+#Chromatic Orb Recipe - 2x2	
 Show	
 	SocketGroup RGB
 	Rarity <= Magic
@@ -852,19 +852,18 @@ Show
 	SetTextColor 200 200 200	
 	SetBackgroundColor 0 0 0 255		
 
-#	ATLAS DROPS
-Show 
+#	ATLAS DROPS			###################################################################
+Show
 	BaseType "Crystal Belt" "Opal Ring" "Steel Ring"
 	
 Show
-	BaseType "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
-	
-	
-# SPECIAL RINGS
+	BaseType "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" 
+		
+#	SPECIAL RINGS
 Show
 	BaseType "Prismatic Ring" 
 				
-#	 FLASKS			###################################################################
+#	 FLASKS				###################################################################
 
 Show	#Flasks - Quality - Q10+ - Normal
 	Quality >= 10
